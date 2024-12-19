@@ -1,0 +1,41 @@
+@import url(Components/accordion/accordion.css);
+
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background-color: #f9f9f9; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    line-height: 1.3; 
+    color: #222; 
+}
+h2 {
+    text-align: center;
+    line-height: 1.3; 
+    color: #1b2972; 
+}
+
+
+.loading {
+    font-size: 16px;
+    color: #1b2972;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.accordion-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+}

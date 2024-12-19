@@ -1,0 +1,23 @@
+.accordion-output {
+    padding-left: 20px;
+    transition: max-height 0.3s ease-in-out;
+    border-left: 20px solid #ccc;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.accordion {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+.accordion:hover {
+    opacity: 1;
+}
+
+
