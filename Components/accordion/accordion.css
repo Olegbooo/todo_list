@@ -15,8 +15,13 @@
     border-right: 1px solid #ccc;
     overflow: hidden;
 }
-
+.accordion.active {
+    opacity: 1; 
+}
 .accordion {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
     cursor: pointer;
     background-color: #f1f1f1;
     padding: 10px;
@@ -30,4 +35,10 @@
     opacity: 1;
 }
 
+.accordion .button {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
 

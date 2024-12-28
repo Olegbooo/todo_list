@@ -29,3 +29,98 @@ h2 {
     padding: 10px;
     font-weight: bold;
 }
+#zero-todo {
+    text-align: center;
+    font-size: 30px;
+    color: #52545d;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+button {
+    border-radius: 8px;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0.5em 1em; 
+    border: none; 
+    background-color: #f0f0f0; 
+    cursor: pointer; 
+}
+
+.btn-action img {
+    margin-left: 8px; 
+    height: 1em; 
+    transition: transform 0.3s ease;
+}
+
+.btn-action span {
+    flex-grow: 1; 
+    text-align: left; 
+}
+.btn-action:hover img {
+    transform: scale(1.5); 
+}
+
+#todo-form {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    margin: 20px 0; 
+    padding: 10px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#todo-input {
+    flex: 1; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#todo-input:focus {
+    border-color: #007BFF; 
+    outline: none; 
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); 
+}
+
+
+.add-button:hover {
+    background-color: #1b2972;
+    color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.completed {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 70%;}
+@media screen and (max-width: 600px) {
+    .completed {
+        margin: 0px;
+    }
+}
+
+.custom-divider {
+    border: none; /* Убираем стандартное оформление */
+    height: 2px; /* Толщина линии */
+    background-color: #ccc; /* Цвет линии */
+    margin: 20px 0; /* Отступы сверху и снизу */
+    width: 80%; /* Ширина линии */
+    margin-left: auto; /* Центрируем линию */
+    margin-right: auto; /* Центрируем линию */
+    border-radius: 5px; /* Скругляем края */
+}
+.btn-action img{
+    pointer-events: none;
+}

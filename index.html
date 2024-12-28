@@ -8,29 +8,33 @@
 </head>
 <body>
 
-        <h1>Completed TODO</h1>
+        <h1>TODO List</h1>
         <div class="accordion-container">
-            <div class="local-todo">
-                <h2>Local TODO</h2>
-                <div class="accordion" id='0'>Accordion 1 </div>
-                    <div class="accordion-output">
-                        <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
-                </div>   
-
-
-                <div class="accordion" id='0'>Accordion 2 </div>
-                    <div class="accordion-output">
-                        <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
-                </div>   
+            <h2>Local TODO</h2>
+            <div>
+                <form id="todo-form">
+                    <input type="text" id="todo-input" placeholder="Enter new todo" required />
+                    <button class="add-button" type="submit">Add</button>
+                </form>
             </div>
+
+            <div class="local-todo" id="local-todos">
+            </div>
+
+            <div id="zero-todo">
+                <p>The to-do list is empty</p>
+            </div>
+            
         
+            <hr class="custom-divider">
 
             <div class="todo-from-placeholder" id="completed-todos">
-                <h2>TODO from PlaceHolder</h2>
+                <h2>TODO from JSONPlaceHolder</h2>
             </div>
         </div>
     
-    <script src="main.js"></script>
-    <script src="Components/accordion/accordion.js"></script>
+        <script src="main.js"></script>
+        <script src="Components/accordion/accordion.js"></script>
+        <script src="addTodos.js"></script>
 </body>
 </html>

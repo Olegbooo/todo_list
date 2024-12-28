@@ -1,25 +1,23 @@
 function initAccordion() {
     document.querySelectorAll('.accordion').forEach(accordion => {
-        accordion.addEventListener('click', () => {
-            const output = accordion.nextElementSibling;
+        const newAccordion = accordion.cloneNode(true);
+        accordion.parentNode.replaceChild(newAccordion, accordion);
 
-            if (output && output.classList.contains('accordion-output')) {
-                if (output.style.display === 'block') {
-                    output.style.display = 'none';
-                } else {
-                    output.style.display = 'block';
-                }
+        newAccordion.addEventListener('click', (event) => {
+            if (event.target.closest('.btn-action')) {
+                return;
+            }
 
-                accordion.classList.toggle('active');
+            const accordionItem = newAccordion.closest('.accordion-item');
+            const output = accordionItem.querySelector('.accordion-output');
+
+            if (output) {
+                output.style.display = output.style.display === 'block' ? 'none' : 'block';
+                newAccordion.classList.toggle('active');
             }
         });
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.accordion-output').forEach(output => {
-        output.style.display = 'none'; 
-    });
-});
-
+document.addEventListener('DOMContentLoaded', initAccordion);
 
